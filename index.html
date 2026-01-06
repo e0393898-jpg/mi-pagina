@@ -4,73 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churro Cat</title>
+
     <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-        background-color: #ffcc70;
-        text-align: center;
-        padding: 20px;
-    }
+        header {
+            background-color: #ffcc70;
+            text-align: center;
+            padding: 20px;
+        }
 
-    header h1 {
-        margin: 0;
-        color: #333;
-    }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
 
-    main {
-        padding: 20px;
-    }
+        nav a:hover {
+            color: #ff6600;
+        }
 
-    h2, h3 {
-        color: #444;
-    }
+        main {
+            padding: 20px;
+        }
 
-    ul {
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-        width: fit-content;
-    }
+        h2, h3 {
+            color: #444;
+        }
 
-    li {
-        margin: 5px 0;
-    }
+        ul {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: fit-content;
+        }
 
-    footer {
-        background-color: #222;
-        color: rgb(30, 0, 255);
-        padding: 20px;
-        text-align: center;
-    }
-</style>
+        li {
+            margin: 5px 0;
+        }
 
+        footer {
+            background-color: #222;
+            color: rgb(30, 0, 255);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
+    <header id="inicio">
         <h1>Churro</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#cuidados">Cuidados</a>
+        </nav>
+
         <p>Churro es un gato. Su nombre completo es <strong>Churro Adán Bruce Wayne</strong>.</p>
         <p>La edad de Churro actualmente es desconocida.</p>
     </header>
-
     <main>
         <section>
-            <h2>Hobbies</h2>
+            <h2 id="hobbies">Hobbies</h2>
             <ul>
                 <li>Cazar animales</li>
                 <li>Molestar</li>
                 <li>Maullar demasiado</li>
             </ul>
+
+            <p>
+                Aprende más sobre los gatos en
+                <a href="https://es.wikipedia.org/wiki/Gato" target="_blank">
+                    Wikipedia
+                </a>
+            </p>
         </section>
     </main>
-
-    <footer>
+    <footer id="cuidados">
         <h3>¿Cómo cuidarlo?</h3>
         <ul>
             <li>Darle su sobre de Whiskas 1 o 2 veces a la semana (incluye jamón)</li>
